@@ -7,13 +7,15 @@ A continuación, se muestra un diagrama de flujo que representa el funcionamient
 
 ```mermaid
 graph LR
-  I(Inicio)
-  N(Numeros a operar)
-  M(Menu)
-  O(Operacion)
-  R(Resultado)
-  I-->N
-```
+  Inicio --> Cantidad
+  Cantidad --> Numeros
+  Numeros --> Menu
+  Menu --> Operacion
+  Operacion --> Resultado
+  Resultado --> Continuar
+  Continuar -- Si --> Cantidad
+  Continuar -- No --> Fin
+ ```
 
 <br>
 
