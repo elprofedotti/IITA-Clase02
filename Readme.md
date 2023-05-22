@@ -1,20 +1,25 @@
 # Calculadora en Python🧮
 Este proyecto es una calculadora interactiva en Python que permite al usuario realizar operaciones básicas como suma, resta, multiplicación y división.
 
+Se realizo una actualizacion en una rama nueva, y se agregaron dos operaciones, Potencia y Raiz.
+Si se elijen estas operaciones, solo se le pedira 2 números al usuario.
+
 ## Diagrama de Flujo 📈
 
 A continuación, se muestra un diagrama de flujo que representa el funcionamiento del programa:
 
 ```mermaid
 graph LR
-  Inicio --> Cantidad
-  Cantidad --> Numeros
-  Numeros --> Menu
-  Menu --> Operacion
-  Operacion --> Resultado
-  Resultado --> Continuar
-  Continuar -- Si --> Cantidad
-  Continuar -- No --> Fin
+  Inicio --> Menu
+  Menu -- elije--> Operacion
+  Operacion -->B(Suma, Resta, Mult o Div)
+  Operacion --> PR(Potencia o Raiz)
+  B -- se pide cantidad de --> Numeros
+  PR --pide 2--> Numeros
+  Numeros --se muestra--> Resultado
+  Resultado --> Continuar?
+  Continuar? -- Si --> Menu
+Continuar? -- No --> Fin
  ```
 
 <br>
