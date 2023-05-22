@@ -8,11 +8,11 @@ A continuación, se muestra un diagrama de flujo que representa el funcionamient
 ```mermaid
 graph LR
   I(Inicio)
-  C(Cantidad)
   N(Numeros a operar)
   M(Menu)
   O(Operacion)
   R(Resultado)
+  I-->N
 ```
 
 <br>
