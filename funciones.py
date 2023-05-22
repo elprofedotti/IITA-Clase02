@@ -9,6 +9,14 @@ def solicitar_numeros(cantidad):
             except ValueError:
                 print("Por favor ingresa un número válido.")
     return numeros
+def cantidad_numeros():
+    while True:
+            try:
+                cantidad = int(input("¿Cuántos números quieres operar? "))
+                break
+            except ValueError:
+                print("Por favor ingresa un número válido.")
+    return cantidad
 
 def mostrar_menu():
     print("""
@@ -16,6 +24,9 @@ def mostrar_menu():
     2) Resta
     3) Multiplicación
     4) División
+    5) Potencia
+    6) Raíz
+    7) Terminar calculadora
     """)
 
 def realizar_operacion(operacion, numeros):
@@ -33,6 +44,10 @@ def realizar_operacion(operacion, numeros):
         for num in numeros[1:]:
             resultado /= num
         return resultado
+    elif operacion == 5:
+        return numeros[0] ** numeros[1]
+    elif operacion == 6:
+        return numeros[0] ** (1 / numeros[1])
     else:
         print("Opción no válida")
         return None
