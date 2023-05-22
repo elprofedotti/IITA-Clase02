@@ -6,24 +6,13 @@ Este proyecto es una calculadora interactiva en Python que permite al usuario re
 A continuación, se muestra un diagrama de flujo que representa el funcionamiento del programa:
 
 ```mermaid
-graph TB
-  Inicio(Inicio)
-  Cantidad{¿Cuántos números operar?}
-  Numeros{Solicitar números}
-  Menu{Mostrar menú de operaciones}
-  Operacion{¿Qué operación realizar?}
-  Resultado{Realizar operación y mostrar resultado}
-  Continuar{¿Continuar con otra operación?}
-  Fin(Fin)
-
-  Inicio --> Cantidad
-  Cantidad --> Numeros
-  Numeros --> Menu
-  Menu --> Operacion
-  Operacion --> Resultado
-  Resultado --> Continuar
-  Continuar -- Si --> Cantidad
-  Continuar -- No --> Fin 
+graph LR
+  I(Inicio)
+  C(Cantidad)
+  N(Numeros a operar)
+  M(Menu)
+  O(Operacion)
+  R(Resultado)
 ```
 
 <br>
