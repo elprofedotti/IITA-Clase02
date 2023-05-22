@@ -69,4 +69,7 @@ A continuación, se mostrará un menú con las operaciones disponibles y le pedi
 
 Después de realizar la operación, se mostrará el resultado y se le preguntará si quiere realizar otra operación. Si el usuario responde "si", el proceso se repetirá. Si responde cualquier otra cosa, el programa se terminará.
 
+## repo GIT:
+
+https://github.com/elprofedotti/IITA-Clase02
 
