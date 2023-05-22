@@ -5,6 +5,13 @@ Este proyecto es una calculadora interactiva en Python que permite al usuario re
 
 A continuación, se muestra un diagrama de flujo que representa el funcionamiento del programa:
 
+```mermaid
+graph LR
+F(Funciones)
+C(Calculadora)
+F --> C 
+```
+
 <br>
 
 <hr>
