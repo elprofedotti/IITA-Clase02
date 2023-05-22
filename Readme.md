@@ -36,7 +36,9 @@ El programa está dividido en varias funciones para facilitar su comprensión y 
 def solicitar_numeros(cantidad):
     """Solicita al usuario la cantidad de números que se especifica."""
     # Código de la función...
-
+def cantidad_numeros():
+    """Solicita al usuario cuantos numeros quiere operar."""
+    # Código de la función...
 def mostrar_menu():
     """Muestra el menú de operaciones al usuario."""
     # Código de la función...
